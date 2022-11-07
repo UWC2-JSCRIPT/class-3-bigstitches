@@ -2,7 +2,15 @@
 // with these properties: {descr, price}
 // i.e. {descr: 'Coke', price: 1.99}
 // function should log each item to the console and log a total price
-
+function logReceipt (...args) {
+  var total = 0;
+  
+  for (let arg of args) {
+    total += arg.price;
+    console.log(`${arg.descr}- $${arg.price}`);
+  }
+  console.log(`Total - $${total}`)
+}
 
 
 // Check
