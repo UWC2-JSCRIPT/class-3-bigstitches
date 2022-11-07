@@ -7,10 +7,20 @@ class spaceShip {
         this.name = name;
         this.topSpeed = topSpeed;
     }
+    
 
     accelerate () {
-        //console.log('${name} moving to ${topSpeed}');
-        console.log(this.name + ' moving to ' + this.topSpeed);
+        console.log(`${this.name} moving to ${this.topSpeed}`);
+        //console.log(this.name + ' moving to ' + this.topSpeed);
+    }
+}
+
+const diffspaceShip = {
+    name : 'unreusableship',
+    topSpeed : 10,
+
+    movefast() {
+        console.log(`${this.name} moving to ${this.topSpeed}`);
     }
 }
 
@@ -21,3 +31,6 @@ let firstShip = new spaceShip('Sulaco', 58);
 let secondShip = new spaceShip('Ishimura', 49);
 firstShip.accelerate();
 secondShip.accelerate();
+
+// not constructed
+// diffspaceShip.movefast();
